@@ -1,0 +1,177 @@
+header {
+	background: #369;
+	color: #fff;
+	padding: 0.2em 1em 1em 1em;
+	margin-bottom: 20px;
+	border-bottom: #666 10px solid;
+}
+
+body {
+	background: #eee;
+	color: #444;
+	margin: auto;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300 !important;
+	min-width: 28em;
+	letter-spacing: 0.1em;
+	background:url('noise.jpg') repeat;
+}
+
+nav {
+	position: fixed;
+	background: #4488dd;
+	padding: 0;
+	margin: 0;
+}
+
+nav a {
+	display: block;
+	box-sizing: border-box;
+	cursor: pointer;
+	color: #eee;
+	padding: 14px;
+	width: 180px;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: 400 !important;
+}
+
+nav a:hover {
+	background: #8844dd;
+}
+
+
+footer {
+	background: #333;
+	color: #FFF;
+}
+
+h1, h2, h3, h4 {
+	font-weight: 300 !important;
+	margin: 0;
+}
+
+h2 {
+	color: #000;
+	display: inline-block;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+h3 {
+	font-size: 1.3em;
+}
+
+ul {
+	margin: 0;
+}
+
+#content-main
+{
+	overflow: auto;
+	margin: 20px;
+	margin-left: 200px;
+	margin-top: 0;
+}
+
+.sec-container {
+	margin-bottom: 20px;
+}
+
+.desc {
+	max-width: 800px;
+	margin-left: 20px;
+}
+
+#content-main a {
+
+	display: inline-block;
+	box-sizing: border-box;
+	cursor: pointer;
+	color: #48d;
+	padding: 10px;
+	text-decoration: none;
+}
+
+ul a {
+	padding: 0 !important;
+}
+
+#content-main a:hover {
+
+	color: #84d;
+	padding: 10px;
+	text-decoration: none;
+}
+
+#profile h2 {
+	background: #48d;
+	color: #fff;
+}
+
+#profile .sec-container {
+	/*border: #48d 1px solid;*/
+}
+
+#skills h2 {
+	background: #d84;
+	color: #FFF;
+}
+
+#skills .sec-container {
+	/*border: #d84 1px solid;*/
+}
+
+#education h2 {
+	background: #d48;
+	color: #FFF;
+}
+
+#education .sec-container {
+	/*border: #d48 1px solid;*/
+}
+
+#experience h2 {
+	background: #84d;
+	color: #FFF;
+}
+
+#experience .sec-container {
+	/*border: #84d 1px solid;*/
+}
+
+#portfolio h2 {
+	background: #8d4;
+	color: #FFF;
+}
+
+#portfolio .sec-container {
+	/*border: #8d4 1px solid;*/
+}
+
+#portfolio .desc {
+	background: #FFF;
+}
+
+#contact h2 {
+	background: #4d8;
+	color: #fff;
+}
+
+#contact .sec-container {
+	/*border: #48d 1px solid;*/
+}
+
+#interests h2 {
+	background: #4d8;
+	color: #FFF;
+}
+
+#interests .sec-container {
+	/*border: #4d8 1px solid;*/
+}
+
+.proj-ss {
+	text-align: center;
+	padding: 20px;
+}
