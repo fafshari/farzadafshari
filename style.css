@@ -1,159 +1,244 @@
-body {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300 !important;
-	margin: 0;
-	color: #eee;
-}
 
-#page {
-	padding-bottom: 300px;
-	margin-top: 30px;
+/*****************
+GLOBAL
+****************/
+	body {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300 !important;
+		margin: 0;
+		color: #eee;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	h1, h2, h3, h4 {
+		margin: 0;
+		padding: 0;
+	}
+
+	#header-wrap, .page-wrap {
+		width: 1000px;
+		margin: 0 auto;
+	}
+
+	blockquote {
+		font-size: 1.5em;
+		font-style: italic;
+		margin: 0.25em 0;
+		padding: 0.25em 40px;
+		position: relative;
+		quotes: “\00AB” “\00BB”
+	}
+
+	blockquote:before { content: open-quote }
+
+	blockquote:after { content: close-quote }
+
+/*****************
+SITE HEADER
+*****************/
+	#site-header {
+		background-image: linear-gradient(bottom, #444, #222);
+		background-image: -o-linear-gradient(bottom, #444, #222);
+		background-image: -moz-linear-gradient(bottom, #444, #222);
+		background-image: -webkit-linear-gradient(bottom, #444, #222);
+		background-image: -ms-linear-gradient(bottom, #444, #222);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#222222');
+
+		height: 38px;
+		position: fixed;
+		width: 100%;
+		top: 0;
+		left: 0;
+		z-index: 999;
+	}
+
+	#header-wrap {
+		position: relative;
+	}
+
+	#header-wrap > * {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0;
+		padding: 0;
+		line-height: 38px;
+
+		color: #ccc;
+	}
+	/*****************
+	TITLE
+	*****************/
+		#site-title {
+			font-size: 1.5em;
+			text-shadow: 0.1em 0.1em 0.2em black;
+		}
+	/*****************
+	NAV
+	*****************/
+		#header-nav {
+			position: absolute;
+			right: 0;
+			bottom: 2px;
+		}
+
+		.header-nav-link{
+			color: #eee;
+			font-weight: 700;
+			text-transform: lowercase;
+			text-shadow: 0.1em 0.1em 0.2em black;
+
+			display: inline-block;
+			line-height: 38px;
+			font-size: 1.2em;
+			vertical-align: middle;
+			padding: 0 10px;
+		}
+
+		.nav-portfolio {
+			color: #f98c70;
+		}
+
+/*****************
+PAGE
+*****************/
+	#page {
+		background: #444;
+		
+		padding-bottom: 600px;
+		margin-top: 30px;
+	}
+
+	.section {
+		padding: 20px 0;
+	}
+
+	/*****************
+	PROFILE
+	*****************/
+		#section-profile {
+			background: #eee;
+			color: #444;
+		}
+		#section-profile .heading {
+			font-size: 2em;
+			color: #444;
+			margin-bottom: 20px;
+		}
+
+		.profile-card {
+			background-image: linear-gradient(bottom, #04819E, #48BEDA);
+			background-image: -o-linear-gradient(bottom, #04819E, #48BEDA);
+			background-image: -moz-linear-gradient(bottom, #04819E, #48BEDA);
+			background-image: -webkit-linear-gradient(bottom, #04819E, #48BEDA);
+			background-image: -ms-linear-gradient(bottom, #04819E, #48BEDA);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#04819E', endColorstr='#48BEDA');
+
+			padding: 20px;
+			color: #eee;
+			font-size: 1em;
+			line-height: 1.5em;
+			color: #fff;
+			text-shadow: 0.1em 0.1em 0.2em black;
+		}
+
+		.profile-card:after {
+		   content: " ";
+		   display: block; 
+		   height: 0; 
+		   clear: both;
+		}
+
+		.profile-card-image {
+			width: 300px;
+			display: inline-block;
+			float: left;
+			border: 10px solid #7DC8DA;
+		}
+
+		.profile-card-body {
+			width: 620px;
+			display: inline-block;
+			float: right;
+		}
+
+		.blockquote-main {
+			font-size: 2em;
+			font-style: italic;
+			margin: 0.25em 0;
+			padding: 0.25em 40px;
+			line-height: 1.45;
+			position: relative;
+			quotes: “\00AB” “\00BB”
+		}
 
 
-	background-image: linear-gradient(bottom, #444, #222);
-	background-image: -o-linear-gradient(bottom, #444, #222);
-	background-image: -moz-linear-gradient(bottom, #444, #222);
-	background-image: -webkit-linear-gradient(bottom, #444, #222);
-	background-image: -ms-linear-gradient(bottom, #444, #222);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#222222');
+	/*****************
+	PORTFOLIO
+	*****************/
+		#section-portfolio {
+			background: #e95c40;
+			background-image: linear-gradient(bottom, #c93c20, #e95c40);
+			background-image: -o-linear-gradient(bottom, #c93c20, #e95c40);
+			background-image: -moz-linear-gradient(bottom, #c93c20, #e95c40);
+			background-image: -webkit-linear-gradient(bottom, #c93c20, #e95c40);
+			background-image: -ms-linear-gradient(bottom, #c93c20, #e95c40);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#e95c40');
+			overflow: hidden;
+			height: auto;
+		}
 
-}
+		#section-portfolio .heading {
+			font-size: 2em;
+			text-shadow: 0.1em 0.1em 0.2em black;
+			color: #DDD;
+			margin-bottom: 20px;
+			text-align: center;
+		}
 
-.section {
-	padding: 40px 0;
-}
+		/* SEQUENCE SLIDER */
+			#section-portfolio .title {
+				color: #e95c40;
+			}
 
-.portfolio .wrap > h2 {
-	font-size: 2em;
-	text-shadow: 0.1em 0.1em 0.2em black;
-	color: #DDD;
-	margin-bottom: 20px;
-	text-align: center;
-}
+			#section-portfolio .subtitle {
+				color: #eee;
+			}
 
-.profile .wrap > h2 {
-	font-size: 2em;
-	color: #444;
-	margin-bottom: 20px;
-}
+			#section-portfolio .description {
+				font-size: 1.5em;
 
-#page .profile {
-	background: #eee;
-	color: #444;
-}
+				width: 500px;
+			}
 
+			#section-portfolio b {
+				color: #e95c40;
+			}
 
-#page .portfolio {
-	background: #e95c40;
-	background-image: linear-gradient(bottom, #c93c20, #e95c40);
-	background-image: -o-linear-gradient(bottom, #c93c20, #e95c40);
-	background-image: -moz-linear-gradient(bottom, #c93c20, #e95c40);
-	background-image: -webkit-linear-gradient(bottom, #c93c20, #e95c40);
-	background-image: -ms-linear-gradient(bottom, #c93c20, #e95c40);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#e95c40');
-	overflow: hidden;
-	height: auto;
-}
+			#section-portfolio .sub-caption {
+				font-size: 0.75em;
+			}
 
-#page .portfolio .title {
-	color: #e95c40;
-}
+	/*****************
+	RESUME
+	*****************/
+		#section-resume {
+			background: #079797;
+		}
 
-#page .portfolio .subtitle {
-	color: #eee;
-}
+		#section-resume .heading {
+			font-size: 2em;
+			text-shadow: 0.1em 0.1em 0.2em black;
+			color: #DDD;
+			margin-bottom: 20px;
+			text-align: center;
+		}
 
-
-#page .resume {
-	background: #079797;
-}
-
-#page .contact {
-	background: #135EA2;
-}
-
-.wrap {
-	width: 1000px;
-	margin: 0 auto;
-}
-
-header .wrap {
-	position: relative;
-}
-
-header .wrap > * {
-	display: inline-block;
-	vertical-align: middle;
-	margin: 0;
-	padding: 0;
-	line-height: 30px;
-
-	color: #ccc;
-}
-
-header {
-	background-image: linear-gradient(bottom, #444, #222);
-	background-image: -o-linear-gradient(bottom, #444, #222);
-	background-image: -moz-linear-gradient(bottom, #444, #222);
-	background-image: -webkit-linear-gradient(bottom, #444, #222);
-	background-image: -ms-linear-gradient(bottom, #444, #222);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#222222');
-
-	height: 30px;
-	position: fixed;
-	width: 100%;
-	top: 0;
-	left: 0;
-	z-index: 999;
-}
-
-h1, h2, h3, h4 {
-	margin: 0;
-	padding: 0;
-}
-
-header h1 {
-	font-size: 1em;
-	text-shadow: 0.1em 0.1em 0.2em black;
-}
-
-.sub-caption {
-	font-size: 0.75em;
-}
-header a {
-	text-decoration: none;
-}
-
-header nav {
-	position: absolute;
-	right: 0;
-	bottom: 2px;
-}
-
-header nav a {
-	display: inline-block;
-	height: 24px;
-	line-height: 24px;
-	vertical-align: middle;
-
-    padding: 0 10px;
-
-
-    color: #eee;
-    font-weight: 700;
-    text-transform: lowercase;
-    text-shadow: 0.1em 0.1em 0.2em black;
-}
-
-header .portfolio {
-	color: #f98c70;
-}
-
-.section {
-	-moz-box-shadow: inset 0 0 5px #666;
-	-webkit-box-shadow: inset 0 0 5px#666;
-	box-shadow: inner 0 0 5px #666;
-}
+	#section-contact {
+		background: #135EA2;
+	}
 
 /*
 header {

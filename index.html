@@ -16,26 +16,27 @@
 		
 		<script src="sequence/scripts/sequence.jquery-min.js"></script>
 		<script src="modern-slide-in/sequencejs-options.modern-slide-in.js"></script>
+		<script src="index.js"></script>
 		
 	</head>
 	<body>
-		<header>
-			<div class="wrap">
+		<header id="site-header">
+			<div id="header-wrap">
 
 				
-				<h1>Farzad Afshari</h1>
+				<h1 id="site-title">Farzad Afshari</h1>
 				<a class="sub-caption">~ Hello Motto</a>
 				
 
-				<nav>
-					<a class="profile" href="index.html#profile">Profile
+				<nav id="header-nav">
+					<a class="header-nav-link nav-profile scroll" href="#section-profile">Profile
 
 					</a>
-					<a class="portfolio" href="index.html#portfolio">Portfolio
+					<a class="header-nav-link nav-portfolio scroll" href="#section-portfolio">Portfolio
 					</a>
-					<a class="resume" href="resume.html"> Resume
+					<a class="header-nav-link nav-resume" href="resume.html"> Resume
 					</a>
-					<a class="contact" href="index.html#contact">Contact
+					<a class="header-nav-link nav-contact" href="index.html#contact">Contact
 					</a>
 				</nav>
 
@@ -45,15 +46,30 @@
 
 		<div id="page">
 
-			<div class="section profile"> 
-				<div class="wrap">
-				<h2>Profile</h2>
+			<div class="section" id="section-profile"> 
+				<div class="page-wrap">
+				<h2 class="heading">Profile</h2>
+				<div class="profile-card">
+					<img class="profile-card-image" src="img/profile.jpg"/>
+					<div class="profile-card-body"> 
+						<blockquote class="blockquote-main">Perceive, Think, Act.</blockquote>
+						<p>Howdy visiter! My name is <b>Farzad</b>, a <b>Computer Programmer</b> in Toronto and a Sheridan College Graduate.</p><br/>
+
+						<p>Game dev has been something I always wanted to do and is the main reason why I picked up programming. But what I enjoy most in game development is AI programming. Just recently, I took part in TGGJ 2013.</p>
+						<blockquote>Most consecutive all nighters: 3 nights.</blockquote>
+
+						<p>Aside from my programming roots, I am big into music as well. I have been learning to play Bass Guitar for about two years. If I had to choose another instrument, I would pick the Violin.</p>
+
+						<blockquote>I'm right-handed but play Bass left-handed!</blockquote>
+
+						That's a bit about myself. Check out the work I have done by flipping through my portfolio!</p></div>
+					</div>
+				</div>
 			</div>
-				
-			</div>
-			<div class="section portfolio">
-				<div class="wrap">
-					<h2>Portfolio</h2>
+
+			<div class="section" id="section-portfolio">
+				<div class="page-wrap">
+					<h2 class="heading">Portfolio</h2>
 
 					<div class="sequence-theme">
 						<div id="sequence">
@@ -74,6 +90,7 @@
 										</li><li>GUI to create real camera lenses
 										</li>
 									</ul>
+									<img class="description-image" src="img/anaglyph-glasses.png" />
 								</li>
 								<li>
 									<h2 class="title">SIRT Site</h2>
@@ -88,6 +105,7 @@
 										</li><li><b>Site under construction</b>
 										</li>
 									</ul>
+									<img class="description-image" src="img/drupal-icon.png" />
 								</li>
 								<li>
 									<h2 class="title">Panacea</h2>
@@ -98,10 +116,11 @@
 										</li><li>AI creating using Behavior Trees and HFSM
 										</li><li>iTween used to animate blood flow
 										</li><li>XBOX 360 controller support
-										</li><li>Developed in <b>under three days</b>
+										</li><li>Developed in <b>&nbsp; under three days</b>
 										</li><li><b>Demo coming soon!</b>
 										</li>
 									</ul>
+									<img class="description-image" src="img/antibody.png" />
 								</li>
 								<li>
 									<h2 class="title">Omega</h2>
@@ -117,6 +136,7 @@
 										</li><li>Animations in Spriter
 										</li>
 									</ul>
+									<img class="description-image" src="img/unity-logo.png" />
 								</li>
 								<li>
 									<h2 class="title">Arena</h2>
@@ -133,23 +153,23 @@
 										</li><li>Developed in only a few days
 										</li>
 									</ul>
+									<img class="description-image" src="img/unity-logo.png" />
 								</li>
 								<li>
 									<h2 class="title">hungryfun.com</h2>
 									<h3 class="subtitle">Personal sandbox website</h3>
 									<img class="portfolio-preview" src="img/hungryss.jpg" alt="portfolio-preview 3" />
 									<ul class="description">
-								
-								<li>Made with JQuery and OOP JavaScript
-								</li><li>Classes created using JavaScript
-								</li><li>Animations done using JQuery
-								</li><li>Styled using WebKits box model
-								</li><li>JavaScript code checks for triggered events such as window resizing
-								</li><li>Utilizes HTML5 tags such as header, nav, footer
-								</li><li>Page comprises of modular PHP files
-								</li>
-								
+										<li>Made with JQuery and OOP JavaScript
+										</li><li>Classes created using JavaScript
+										</li><li>Animations done using JQuery
+										</li><li>Styled using WebKits box model
+										</li><li>JavaScript code checks for triggered events such as window resizing
+										</li><li>Utilizes HTML5 tags such as header, nav, footer
+										</li><li>Page comprises of modular PHP files
+										</li>
 									</ul>
+									<img class="description-image" src="img/css3.png" />
 								</li>
 								<li>
 									<h2 class="title">salesprodomains.com</h2>
@@ -262,8 +282,13 @@
 				</div>
 			</div>
 
-			<div class="section resume"><h2>Resume</h2></div>
-			<div class="section contact"><h2>Contact</h2></div>
+			<div class="section" id="section-resume">
+				<div class="page-wrap">
+					<h2 class="heading">Resume</h2>
+					<blockquote class="blockquote-main">Coming soon.</blockquote>
+				</div>
+			</div>
+			<div class="section" id="section-contact"><h2 class="heading">Contact</h2></div>
 
 <!--
 			<div id="profile">
