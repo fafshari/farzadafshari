@@ -101,6 +101,14 @@ SITE HEADER
 			color: #f98c70;
 		}
 
+		.nav-resume {
+			color: #438EE2;
+		}
+
+		.nav-contact {
+			color: #07781A;
+		}
+
 /*****************
 PAGE
 *****************/
@@ -135,7 +143,7 @@ PAGE
 			background-image: -webkit-linear-gradient(bottom, #04819E, #48BEDA);
 			background-image: -ms-linear-gradient(bottom, #04819E, #48BEDA);
 			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#04819E', endColorstr='#48BEDA');
-
+			box-shadow: 0 0 20px #069;
 			padding: 20px;
 			color: #eee;
 			font-size: 1em;
@@ -225,7 +233,8 @@ PAGE
 	RESUME
 	*****************/
 		#section-resume {
-			background: #079797;
+			background: #135EA2;
+			box-shadow: 0 0 20px #111;
 		}
 
 		#section-resume .heading {
@@ -236,187 +245,95 @@ PAGE
 			text-align: center;
 		}
 
+		#section-resume-container {
+			background: #eee;
+			color: #444;
+			padding: 40px;
+			line-height: 1.5em;
+			border-radius: 40px;
+		}
+
+		#section-resume-container h2 {
+			font-weight: 300;
+			text-transform: capitalize;
+			padding: 10px;
+			background: #135EA2;
+			color: #DDD;
+			font-size: 1.5em;
+			border-radius: 10px;
+-moz-box-shadow: 0 0 3px #888;
+				-webkit-box-shadow: 0 0 3px#888;
+				box-shadow: 0 0 3px #888;
+
+		}
+
+		.section-resume-content {
+			padding: 20px;
+		}
+
+		/*****************
+		SKILLS
+		*****************/
+			#section-resume-skills-content {
+				margin: -6px;
+			}
+
+			.skill-element {
+				display: inline-block;
+				padding: 8px;
+				margin: 6px;
+
+				color: #444;
+				font-weight: 700;
+
+				background: #CCC;
+				background-image: linear-gradient(bottom, #DDD, #BBB);
+				background-image: -o-linear-gradient(bottom, #DDD, #BBB);
+				background-image: -moz-linear-gradient(bottom, #DDD, #BBB);
+				background-image: -webkit-linear-gradient(bottom, #DDD, #BBB);
+				background-image: -ms-linear-gradient(bottom, #DDD, #BBB);
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#BBBBBB', endColorstr='#DDDDDD');
+				
+				border-radius: 4px;
+				-moz-box-shadow: 0 0 3px #888;
+				-webkit-box-shadow: 0 0 3px#888;
+				box-shadow: 0 0 3px #888;
+			}
+		/*****************
+		EDUCATION
+		*****************/
+			#section-resume-education-content {
+				overflow: auto;
+			}
+
+			#section-resume-education-content h3 {
+				vertical-align: middle;
+			}
+
+			.education-courses {
+				float: left;
+				width: 400px;
+				display: block;
+				padding: 8px;
+				margin: 6px;
+				position: relative;
+				color: #444;
+				font-weight: 700;
+
+				background: #CCC;
+				background-image: linear-gradient(bottom, #DDD, #BBB);
+				background-image: -o-linear-gradient(bottom, #DDD, #BBB);
+				background-image: -moz-linear-gradient(bottom, #DDD, #BBB);
+				background-image: -webkit-linear-gradient(bottom, #DDD, #BBB);
+				background-image: -ms-linear-gradient(bottom, #DDD, #BBB);
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#BBBBBB', endColorstr='#DDDDDD');
+				
+				border-radius: 4px;
+				-moz-box-shadow: 0 0 3px #888;
+				-webkit-box-shadow: 0 0 3px#888;
+				box-shadow: 0 0 3px #888;	
+			}
+
 	#section-contact {
-		background: #135EA2;
+		background: #07781A;
 	}
-
-/*
-header {
-	background: #369;
-	color: #fff;
-	padding: 0.2em 1em 1em 1em;
-	margin-bottom: 20px;
-	border-bottom: #666 10px solid;
-}
-
-body {
-	background: #eee;
-	color: #444;
-	margin: auto;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300 !important;
-	min-width: 28em;
-	letter-spacing: 0.1em;
-	background:url('noise.jpg') repeat;
-}
-
-nav {
-	position: fixed;
-	background: #4488dd;
-	padding: 0;
-	margin: 0;
-}
-
-nav a {
-	display: block;
-	box-sizing: border-box;
-	cursor: pointer;
-	color: #eee;
-	padding: 12px;
-	width: 180px;
-	text-decoration: none;
-	font-size: 12px;
-	font-weight: 400 !important;
-}
-
-nav a:hover {
-	background: #8844dd;
-}
-
-
-footer {
-	background: #333;
-	color: #FFF;
-}
-
-h1, h2, h3, h4 {
-	font-weight: 300 !important;
-	margin: 0;
-}
-
-h2 {
-	color: #000;
-	display: inline-block;
-	padding: 10px;
-	margin-bottom: 20px;
-}
-
-h3 {
-	font-size: 1.3em;
-}
-
-ul {
-	margin: 0;
-}
-
-#content-main
-{
-	overflow: auto;
-	margin: 20px;
-	margin-left: 200px;
-	margin-top: 0;
-}
-
-.sec-container {
-	margin-bottom: 20px;
-}
-
-.desc {
-	max-width: 800px;
-	margin-left: 20px;
-}
-
-#content-main a {
-
-	display: inline-block;
-	box-sizing: border-box;
-	cursor: pointer;
-	color: #48d;
-	padding: 10px;
-	text-decoration: none;
-}
-
-ul a {
-	padding: 0 !important;
-}
-
-#content-main a:hover {
-
-	color: #84d;
-	padding: 10px;
-	text-decoration: none;
-}
-
-#profile h2 {
-	background: #48d;
-	color: #fff;
-}
-
-#profile .sec-container {
-	/*border: #48d 1px solid;
-}
-
-#skills h2 {
-	background: #d84;
-	color: #FFF;
-}
-
-#skills .sec-container {
-	/*border: #d84 1px solid;
-}
-
-#education h2 {
-	background: #d48;
-	color: #FFF;
-}
-
-#education .sec-container {
-	/*border: #d48 1px solid;
-}
-
-#experience h2 {
-	background: #84d;
-	color: #FFF;
-}
-
-#experience .sec-container {
-	/*border: #84d 1px solid;
-}
-
-#portfolio h2 {
-	background: #8d4;
-	color: #FFF;
-}
-
-#portfolio .sec-container {
-	/*border: #8d4 1px solid;
-}
-
-#portfolio .desc {
-	background: #FFF;
-}
-
-#contact h2 {
-	background: #4d8;
-	color: #fff;
-}
-
-#contact .sec-container {
-	/*border: #48d 1px solid;
-}
-
-#interests h2 {
-	background: #4d8;
-	color: #FFF;
-}
-
-#interests .sec-container {
-	/*border: #4d8 1px solid;
-}
-
-.proj-ss {
-	text-align: center;
-	padding: 20px;
-}
-
-*/
