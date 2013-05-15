@@ -59,6 +59,7 @@ table {
   position: relative;
   width: 100%;
 
+  background: #222;
   background-image: linear-gradient(bottom, #333, #111);
   background-image: -o-linear-gradient(bottom, #333, #111);
   background-image: -moz-linear-gradient(bottom, #333, #111);

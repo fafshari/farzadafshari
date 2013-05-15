@@ -40,6 +40,7 @@ GLOBAL
 SITE HEADER
 *****************/
 	#site-header {
+		background: #333;
 		background-image: linear-gradient(bottom, #444, #222);
 		background-image: -o-linear-gradient(bottom, #444, #222);
 		background-image: -moz-linear-gradient(bottom, #444, #222);
