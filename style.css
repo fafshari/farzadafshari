@@ -138,6 +138,7 @@ PAGE
 		}
 
 		.profile-card {
+			background: #48BEDA;
 			background-image: linear-gradient(bottom, #04819E, #48BEDA);
 			background-image: -o-linear-gradient(bottom, #04819E, #48BEDA);
 			background-image: -moz-linear-gradient(bottom, #04819E, #48BEDA);
