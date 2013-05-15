@@ -234,6 +234,13 @@ PAGE
 	*****************/
 		#section-resume {
 			background: #135EA2;
+			background-image: linear-gradient(bottom, #003E82, #236EB2);
+			background-image: -o-linear-gradient(bottom, #003E82, #236EB2);
+			background-image: -moz-linear-gradient(bottom, #003E82, #236EB2);
+			background-image: -webkit-linear-gradient(bottom, #003E82, #236EB2);
+			background-image: -ms-linear-gradient(bottom, #003E82, #236EB2);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#034E92', endColorstr='#236EB2');
+			
 			box-shadow: 0 0 20px #111;
 		}
 
@@ -250,7 +257,9 @@ PAGE
 			color: #444;
 			padding: 40px;
 			line-height: 1.5em;
-			border-radius: 40px;
+			-moz-box-shadow: 0 0 20px #111;
+			-webkit-box-shadow: 0 0 20px#111;
+			box-shadow: 0 0 20px #111;
 		}
 
 		#section-resume-container h2 {
@@ -261,7 +270,7 @@ PAGE
 			color: #DDD;
 			font-size: 1.5em;
 			border-radius: 10px;
--moz-box-shadow: 0 0 3px #888;
+			-moz-box-shadow: 0 0 3px #888;
 				-webkit-box-shadow: 0 0 3px#888;
 				box-shadow: 0 0 3px #888;
 
@@ -334,6 +343,123 @@ PAGE
 				box-shadow: 0 0 3px #888;	
 			}
 
-	#section-contact {
-		background: #07781A;
-	}
+		/**************
+		EXPERIENCE
+		**************/
+			#experience {
+			}
+
+			.exp-container {
+				padding: 20px;
+				padding-bottom: 0;
+			}
+
+			.exp-block {
+				margin-bottom: 16px;
+			}
+
+			.exp-block h3 {
+				font-size: 1.3em;
+				margin-bottom: 10px;
+
+				padding: 8px;
+				margin: 6px;
+				color: #444;
+				font-weight: 700;
+				background: #CCC;
+				background-image: linear-gradient(bottom, #DDD, #BBB);
+				background-image: -o-linear-gradient(bottom, #DDD, #BBB);
+				background-image: -moz-linear-gradient(bottom, #DDD, #BBB);
+				background-image: -webkit-linear-gradient(bottom, #DDD, #BBB);
+				background-image: -ms-linear-gradient(bottom, #DDD, #BBB);
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#BBBBBB', endColorstr='#DDDDDD');
+				border-radius: 4px;
+				-moz-box-shadow: 0 0 3px #888;
+				-webkit-box-shadow: 0 0 3px#888;
+				box-shadow: 0 0 3px #888;	
+			}
+
+			.exp-block ul {
+				margin-left: 20px;
+			}
+
+			.exp-block li {
+				margin: 8px 0;
+			}
+
+	/*****************
+	CONTACT
+	*****************/
+		#section-contact {
+			background: #07781A;
+			background-image: linear-gradient(bottom, #00680A, #27883A);
+			background-image: -o-linear-gradient(bottom, #00680A, #27883A);
+			background-image: -moz-linear-gradient(bottom, #00680A, #27883A);
+			background-image: -webkit-linear-gradient(bottom, #00680A, #27883A);
+			background-image: -ms-linear-gradient(bottom, #00680A, #27883A);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00680A', endColorstr='#27883A');
+			
+			box-shadow: 0 0 20px #111;
+
+		}
+
+		#section-contact .heading {
+			font-size: 2em;
+			text-shadow: 0.1em 0.1em 0.2em black;
+			color: #DDD;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+
+		#contact-container {
+			color: #444;
+			padding: 4%;
+			line-height: 1.5em;
+
+			background: #fff;
+			background-image: linear-gradient(bottom, #dfd, #fff);
+			background-image: -o-linear-gradient(bottom, #dfd, #fff);
+			background-image: -moz-linear-gradient(bottom, #dfd, #fff);
+			background-image: -webkit-linear-gradient(bottom, #dfd, #fff);
+			background-image: -ms-linear-gradient(bottom, #dfd, #fff);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ccffcc', endColorstr='#ffffff');
+			-moz-box-shadow: 0 0 20px #242;
+			-webkit-box-shadow: 0 0 20px#242;
+			box-shadow: 0 0 20px #242;
+		}
+
+		.contact-section {
+			width: 50%;
+			margin: 10px auto;
+		}
+
+		.contact-section-image {
+			display: inline;
+			width: 20%;
+			vertical-align: middle;
+		}
+
+		.contact-section-text {
+			display: inline-block;
+			width: 69%;
+			font-style: italic;
+			font-size: 2.2em;
+		}
+
+		.contact-section-text-left {
+			text-align: right;
+			margin-right: 10%;
+		}
+
+		.contact-section-text-right {
+
+			margin-left: 10%;
+		}
+
+		.contact-section-text a {
+			color: #07781A;
+		}
+
+		.contact-section-text a:visited {
+			color: #17A82A;
+		}
